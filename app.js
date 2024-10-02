@@ -10,11 +10,11 @@ app.use(cors());
 app.use(express.json());
 
 // Enable CORS for the GitHub Pages frontend
-//app.use(cors({
-    //origin: 'https://ranjitharr.github.io', // Replace with your GitHub Pages URL
-    //methods: ['GET', 'POST'],
-    //allowedHeaders: ['Content-Type']
-//}));
+app.use(cors({
+    origin: 'https://ranjitharr.github.io', // Replace with your GitHub Pages URL
+    methods: ['GET', 'POST'],
+    allowedHeaders: ['Content-Type']
+}));
 
 const db = mysql.createConnection({
     host: 'localhost',   // Your MySQL host
