@@ -11,7 +11,7 @@ app.use(express.json());
 
 // Enable CORS for the GitHub Pages frontend
 app.use(cors({
-    origin: 'https://ranjitharr.github.io', // Replace with your GitHub Pages URL
+    origin: 'https://ranjitharr.github.io','https://8db8-2405-201-e014-30a1-2c2d-119a-118b-454.ngrok-free.app' // Replace with your GitHub Pages URL
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type']
 }));
