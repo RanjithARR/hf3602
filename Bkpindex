@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HF360</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>HF360 - Your Health & Fitness Companion</h1>
+        <p>Boost your health with a balanced diet and proper nutrition</p>
+        <p>Let food be thy medicine and medicine be thy food</p>
+        <p>You are what you eat</p>
+    </header>
+
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        Welcome to HF360 - Discover the Nutrition Benefits! Experience something new! Listen to your body!
+    </marquee>
+
+    <!-- Main Section with Dropdown and Registration -->
+    <main>
+        <!-- Package Dropdown -->
+        <div class="package-section">
+            <label for="package">Choose a Package:</label>
+            <select id="package">
+                <option value="package1">Package 1</option>
+                <option value="package2">Package 2</option>
+                <option value="package3">Package 3</option>
+            </select>
+        </div>
+
+        <!-- User Registration Form -->
+        <div class="registration-section">
+            <h2>Register for a Free Account</h2>
+            <form id="registrationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- Background Nutrition Foods Section -->
+    <div class="background-section">
+        <h3>Healthy Nutrition for a Fit Lifestyle</h3>
+        <ul class="nutrition-foods">
+            <li>Broccoli</li>
+            <li>Avocados</li>
+            <li>Almonds</li>
+            <li>Sweet Potatoes</li>
+            <li>Quinoa</li>
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

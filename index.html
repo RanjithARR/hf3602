@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HF360 - Nutrition and Wellness</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('images/veg.jpg'); /* Ensure the correct path here */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 128, 0, 0.7);
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Slogan image style */
+        .slogan-image {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 150px; /* Adjust the size as necessary */
+            height: auto;
+        }
+
+        /* Scrolling text style */
+        .scrolling-text {
+            font-size: 18px;
+            font-weight: bold;
+            color: yellow;
+            white-space: nowrap;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        .scrolling-text span {
+            display: inline-block;
+            padding-left: 100%;
+            animation: scroll 25s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translate(100%, 0);
+            }
+            100% {
+                transform: translate(-100%, 0);
+            }
+        }
+
+        /* Packages Section Styles */
+        .packages-section {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 20px;
+            margin: 50px auto;
+            max-width: 1200px;
+        }
+
+        .packages-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .packages-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .package {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 300px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .package:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .package img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .package-details {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .package-details h3 {
+            margin: 10px 0;
+            color: #28a745;
+        }
+
+        .package-details p {
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .package-details .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+
+        /* Registration form styles */
+        .registration-section {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            margin: 50px auto;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .packages-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .package {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        Welcome to HF360 - Nutrition & Wellness
+        <img src="images/slogan.jpeg" alt="Slogan Image" class="slogan-image">
+    </header>
+
+    <!-- Scrolling text (e.g., nutrition benefits) -->
+    <div class="scrolling-text">
+        <span>Discover the benefits of proper nutrition: Boost immunity, increase energy, and live healthier!</span>
+    </div>
+
+    <!-- Packages Section -->
+    <div class="packages-section">
+        <h2>Choose Your Nutrition Package</h2>
+        <div class="packages-container">
+            <!-- Package 1 -->
+            <div class="package">
+                <img src="images/vege.jpg" alt="Package 1">
+                <div class="package-details">
+                    <h3>Basic Nutrition</h3>
+                    <p>Essential nutrients to get you started on your wellness journey.</p>
+                    <div class="price">399/month</div>
+                </div>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="package">
+                <img src="images/spinach.jpg" alt="Package 2">
+                <div class="package-details">
+                    <h3>Advanced Nutrition</h3>
+                    <p>Comprehensive plan with personalized meal recommendations.</p>
+                    <div class="price">499/month</div>
+                </div>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package">
+                <img src="images/pulse.jpg" alt="Package 3">
+                <div class="package-details">
+                    <h3>Premium Nutrition</h3>
+                    <p>All-inclusive package with one-on-one consultations and premium resources.</p>
+                    <div class="price">799/month</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- User Registration Form -->
+    <!-- User Registration Form -->
+<div class="registration-section">
+    <h2>Register for a Free Account</h2>
+    <form id="registrationForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required>
+
+        <!-- Package Selection Dropdown -->
+        <label for="package">Select Your Package:</label>
+        <select id="package" name="package" required>
+            <option value="basic">Basic Package</option>
+            <option value="advanced">Advanced Package</option>
+            <option value="premium">Premium Package</option>
+        </select>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<!-- Script for form submission -->
+<script>
+    document.getElementById('registrationForm').addEventListener('submit', function (e) {
+        e.preventDefault();  // Prevents form from submitting the traditional way
+
+        // Get form values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const country = document.getElementById('country').value;
+        const package = document.getElementById('package').value;
+
+        // Create data object
+        const formData = {
+            name: name,
+            email: email,
+            country: country,
+            package: package
+        };
+
+        // Send the data to the backend via POST request
+        fetch('http://127.0.0.1:3000/register', {  // Replace with your backend URL
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+        .then(response => response.text())
+        .then(data => {
+            alert('Registration successful: ' + data);
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error with your registration.');
+        });
+    });
+</script>
+</body>
+</html>
